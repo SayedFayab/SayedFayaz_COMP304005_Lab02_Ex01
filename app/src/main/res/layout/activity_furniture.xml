@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    tools:context=".FurnitureActivity">
+
+    <TextView
+        android:id="@+id/textViewFurn"
+        android:layout_width="139dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="72dp"
+        android:text="Furniture"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewBed"
+        android:layout_width="147dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/bed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.856"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFurn"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageViewCabi"
+        android:layout_width="139dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/cabinet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxCabi"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBed"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="145dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="56dp"
+        android:src="@drawable/sofa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxSofa"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCabi"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <CheckBox
+        android:id="@+id/checkBoxBed"
+        style="@style/CheckboxTheme"
+        android:layout_width="137dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="56dp"
+        android:text="Bed  : $973"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFurn" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCabi"
+        style="@style/CheckboxTheme"
+        android:layout_width="151dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="100dp"
+        android:text="Cabinet : $476"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.226"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxBed" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSofa"
+        style="@style/CheckboxTheme"
+        android:layout_width="135dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="96dp"
+        android:text="Sofa : $3078"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.213"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxCabi" />
+
+    <Button
+        android:id="@+id/checkout"
+        style="@style/ButtonTheme"
+        android:layout_width="131dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="60dp"
+        android:text="Checkout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

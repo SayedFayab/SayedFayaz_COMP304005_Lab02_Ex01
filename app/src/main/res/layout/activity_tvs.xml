@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    tools:context=".TVsActivity">
+
+    <TextView
+        android:id="@+id/textViewTVs"
+        android:layout_width="105dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="72dp"
+        android:text="TVs"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSam"
+        style="@style/CheckboxTheme"
+        android:layout_width="159dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="52dp"
+        android:text="Samsung : $600"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTVs" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPhilips"
+        style="@style/CheckboxTheme"
+        android:layout_width="166dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="84dp"
+        android:text="Philips : $720"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxSam" />
+
+    <CheckBox
+        android:id="@+id/checkBoxHisense"
+        style="@style/CheckboxTheme"
+        android:layout_width="167dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="100dp"
+        android:text="Hisense : $450"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxPhilips" />
+
+    <ImageView
+        android:id="@+id/imageViewSam"
+        android:layout_width="134dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/sam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTVs"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageViewPhilips"
+        android:layout_width="130dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="56dp"
+        android:src="@drawable/philips"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxPhilips"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSam"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageViewHisense"
+        android:layout_width="138dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/hisense"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.294"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxHisense"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPhilips"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/checkout"
+        style="@style/ButtonTheme"
+        android:layout_width="135dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="44dp"
+        android:text="Checkout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewHisense" />
+</androidx.constraintlayout.widget.ConstraintLayout>

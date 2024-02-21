@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComputerActivity">
+
+    <TextView
+        android:id="@+id/textViewComputer"
+        android:layout_width="131dp"
+        android:layout_height="36dp"
+        android:text="Computers"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <ImageView
+        android:id="@+id/imageViewLaptop"
+        android:layout_width="137dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/laptop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxLaptop"
+        app:layout_constraintTop_toBottomOf="@+id/textViewComputer"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageViewDesktop"
+        android:layout_width="138dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/desktop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.349"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxDesktop"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLaptop"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageViewComp"
+        android:layout_width="134dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/minidesktop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxMini"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDesktop"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLaptop"
+        style="@style/CheckboxTheme"
+        android:layout_width="175dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="80dp"
+        android:text="Laptop : $1500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewComputer" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDesktop"
+        style="@style/CheckboxTheme"
+        android:layout_width="168dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="104dp"
+        android:text="Desktop : $645"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxLaptop" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMini"
+        style="@style/CheckboxTheme"
+        android:layout_width="189dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="96dp"
+        android:text="Mini Desktop : $823"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxDesktop" />
+
+    <Button
+        android:id="@+id/checkout"
+        style="@style/ButtonTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Checkout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.628"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewComp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

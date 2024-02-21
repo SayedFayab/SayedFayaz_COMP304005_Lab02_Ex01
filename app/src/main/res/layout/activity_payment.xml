@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    tools:context=".PaymentActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/TextViewTheme"
+        android:layout_width="279dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="56dp"
+        android:text="Select Payment Option :"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rb_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/cash_rb"
+            style="@style/CheckboxTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cash" />
+
+        <RadioButton
+            android:id="@+id/credit_rb"
+            style="@style/CheckboxTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Credit Card" />
+
+        <RadioButton
+            android:id="@+id/debit_rb"
+            style="@style/CheckboxTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Debit Card" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submit_choice_btn"
+        style="@style/ButtonTheme"
+        android:layout_width="140dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="472dp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

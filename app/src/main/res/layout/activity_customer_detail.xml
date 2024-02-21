@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#009688"
+    android:layout_height="match_parent"
+    tools:context=".CustomerDetailActivity">
+
+    <TextView
+        android:id="@+id/textViewDetail"
+        style="@style/TextViewTheme"
+        android:layout_width="318dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="36dp"
+        android:text="Please Enter your Information Bellow : "
+        app:layout_constraintBottom_toBottomOf="@+id/final_Output"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="321dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Enter your name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetail" />
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="323dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Enter your address"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="321dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter your email"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.268"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAddress" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="324dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter phone number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.287"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+    <EditText
+        android:id="@+id/editTextHobby"
+        android:layout_width="324dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Enter your hobby"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.308"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <EditText
+        android:id="@+id/editTextTeam"
+        android:layout_width="327dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Enter your favorite team"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.321"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextHobby" />
+
+    <EditText
+        android:id="@+id/editTextCard"
+        android:layout_width="329dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Enter your card number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTeam" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        style="@style/ButtonTheme"
+        android:layout_width="138dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.788"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCard" />
+
+    <TextView
+        android:id="@+id/final_Output"
+        android:layout_width="340dp"
+        android:layout_height="136dp"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

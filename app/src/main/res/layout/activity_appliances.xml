@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#009688"
+    android:layout_height="match_parent"
+    tools:context=".AppliancesActivity">
+
+    <TextView
+        android:id="@+id/textViewAppliances"
+        style="@style/CheckboxTheme"
+        android:layout_width="147dp"
+        android:layout_height="37dp"
+        android:text="Appliances"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <ImageView
+        android:id="@+id/imageViewDryer"
+        android:layout_width="143dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/dryer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxDryer"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAppliances"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageViewMac"
+        android:layout_width="137dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/macrowave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxMacro"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDryer"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageViewWash"
+        android:layout_width="135dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/wahingmachine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxWash"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewMac"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDryer"
+        style="@style/CheckboxTheme"
+        android:layout_width="176dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="76dp"
+        android:text="Dryer : $590"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAppliances" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMacro"
+        style="@style/CheckboxTheme"
+        android:layout_width="184dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="96dp"
+        android:text="Macrowave : $230"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxDryer" />
+
+    <CheckBox
+        android:id="@+id/checkBoxWash"
+        style="@style/CheckboxTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="Washing machine : $597"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxMacro" />
+
+    <Button
+        android:id="@+id/checkout"
+        android:layout_width="161dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="48dp"
+        android:text="Checkout"
+        style="@style/ButtonTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.748"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewWash" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
